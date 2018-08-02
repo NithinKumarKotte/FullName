@@ -14,7 +14,7 @@ public class FullName {
 		String [] strArray= name.split("<");
 		for(int i=0;i<strArray.length;i++) {
 			
-			//Checking for end conditions when i=0
+			//Checking for boundary conditions when i=0
 			if(i==0){
 				if(strArray[i].equals("Kotte") && strArray[i+1].isEmpty()){
 					System.out.println("LastName : "+strArray[i]);
@@ -30,7 +30,7 @@ public class FullName {
 				
 			}
 			
-			//Checking for end conditions when i=last index
+			//Checking for boundary conditions when i=last index
 			else if(i==strArray.length-1){
 				if(strArray[i].equals("Kotte") && strArray[i-1].isEmpty()){
 					System.out.println("LastName : "+strArray[i]);
